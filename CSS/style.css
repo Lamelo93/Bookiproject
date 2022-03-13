@@ -1,0 +1,776 @@
+*
+{
+            box-sizing: border-box;
+    
+    font-family: Raleway, sans-serif;
+    padding: 0;
+}
+body
+{
+    margin: 0;
+}
+h1, h2
+{
+    cursor: default;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+.container /*HEADER TO BOTTOM SECTION*/
+{
+    max-width: 1440px;
+    margin: auto;
+}
+/*-------------------------------HEADER---------------------------------------*/
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+header img
+{
+    margin-left: 20px;
+    height: 50px;
+}
+nav ul
+{
+    list-style: none;
+    display: flex;
+}
+nav li
+{
+    width: 200px;
+    text-align: center;
+    
+}
+nav li a
+{
+    padding: 36px 33px 33px 33px;
+}
+nav li a:hover
+{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+/*------------------------------------------SEARCHTOOL------------------------------------------------*/
+#searchtool
+{
+    position: relative;
+    margin-left: 45px;
+    margin-top: 40px;
+}
+#searchtool h1
+{
+    font-weight: bold;
+    font-size: 19px;
+}
+#searchtool p
+{
+    margin-top: 0;
+    font-size: 16px;
+    font-weight:500;
+}
+#mag /*ICONE LOUPE*/
+{
+    display: none;
+}
+#bar
+{
+    position: relative;
+    height: 45px;
+}
+form
+{
+    height: 45px;
+}
+#bar input[type="search"]
+{
+    position: absolute;
+    left: 45px;
+    padding-left: 5px;
+    border: 1px solid #F2F2F2;
+    width: 235px;
+    font-size: inherit;
+}
+#bar form input
+{
+    height: 45px;
+}
+#bar input[type="submit"]
+{
+    position: absolute;
+    left: 275px;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 15px 15px 0;
+}
+#mapmark
+{
+    position: absolute;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 16px;
+}
+#filters
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+#filters h2
+{
+    margin: 0;
+    margin-right: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 19px;
+}
+#filters ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+}
+#filters li
+{
+    border: #DEEBFF 2px solid;
+    border-left: none;
+    border-radius: 25px;
+}
+#filters span
+{
+    padding-left: 20px;
+    padding-right: 15px;
+    font-weight: 800;
+}
+#filters i
+{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    text-align: center;
+    line-height: 42px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+#filters li:hover
+{
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
+#infoline
+{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 15px;
+}
+#infoline i
+{
+    color: #0065FC;
+    border: #DEEBFF 1px solid;
+    text-align: center;
+    line-height: 23px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 11px;
+    flex-shrink: 0;
+}
+#infoline p
+{
+    font-weight: 400;
+    line-height: 25px;
+    padding-left: 15px;
+    margin: 0;
+}
+
+/*-------------------------------------MIDDLE SECTION------------------------------------------*/
+#midsec
+{
+    margin: 3%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+}
+#midsec h2
+{
+    font-size: 19px;
+}
+#midsec h3
+{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 800;
+}
+#midsec p /*TEXTES COUT DE LA NUIT*/
+{
+    font-size: 13px;
+}
+#midsec .cardimg /*BALISE IMG DES CARTES*/
+{
+    transition-property: height,width; 
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+.fa-star /*ICONE ETOILE*/
+{
+    font-size: 12px;
+    margin-right: -1%;
+}
+.bluestar
+{
+    color: #0065FC;
+}
+.greystar
+{
+    color: #F2F2F2;
+}
+
+/*--------------------------------------------HEBERGEMENTS MARSEILLE---------------------------------------------*/
+#hebmar
+{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 30px;
+    flex-grow: 2;
+    width: 66.6%;
+}
+#hebmar h2
+{
+    margin-top: 0;
+}
+#articleheb
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4%;
+}
+#articleheb article:hover .cardimg
+{
+    width: 110%;
+}
+
+/*CARTE HEBERGEMENTS MARSEILLE*/
+.cardheb
+{
+    width: 30%;
+    margin-bottom: 2%;
+}
+.cardheb a
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: white 4px solid;
+    box-shadow: 5px 3px 6px 0px rgba(0,0,0,0.25);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.cardheb img /*IMAGE CARTE HEBERGEMENTS MARSEILLE*/
+{
+    width: 100%;
+    height: 100px;
+    object-fit:cover;
+    border-radius: 15px 15px 0 0;
+}
+.hebbody /*CORPS DE LA CARTE HEBERGEMENTS MARSEILLE*/
+{
+    padding: 5px;
+}
+.hebbody p /*TEXTE COUT DE LA NUIT*/
+{
+    margin: 7px 0;
+    margin-bottom: 0px;
+}
+#afficherplus
+{
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight:800;
+}
+
+/*----------------------------------------------------LES PLUS POPULAIRES---------------------------------------*/
+#populaires
+{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    flex-grow: 1;
+    padding: 30px;
+    width: 33.3%;
+}
+#populaires h2
+{
+    margin-top: 0;
+    display: inline-block;
+}
+.fa-chart-line
+{
+    font-size: 20px;
+    float: right;
+}
+#articlespop
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*CARTE LES PLUS POPULAIRES*/
+.cardpop a
+{
+    display: flex;
+    background-color: white;
+    border: white 4px solid;
+    box-shadow: 5px 3px 6px 0px rgba(0,0,0,0.25);
+    border-radius: 15px;
+    overflow: hidden;
+    height: 120px;
+    gap: 5%;
+}
+.imgpop /*ZONE IMAGE CARTE POPULAIRES*/
+{
+    height: 120px;
+    width: 120px;
+}
+.imgpop img
+{
+    width: 116px;
+    height: 100%;
+    object-fit:cover;
+}
+#articlespop article:hover .cardimg
+{
+    height: 110%;
+}
+.popbody
+{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.poptext
+{
+    line-height: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+.poptext p
+{
+    margin: 0;
+}
+
+/*-----------------------------------------------------BOTTOM SECTION----------------------------------------------------*/
+.bottomsec
+{
+    margin: 0 3%;
+}
+.bottomsec h2
+{
+    font-size: 19px;
+}
+.bottomsec h3
+{
+    font-size: 15px;
+    font-weight: 800;
+}
+.activ
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 38px;
+}
+.activ img
+{
+    width: 100%;
+    object-fit: cover;
+    transition-property: height,width; 
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+.columns
+{
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+}
+.column2 /*SMALL CARDS*/
+{
+    gap: 38px;
+}
+.activlink
+{
+    display: block;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 5px 3px 6px 0px rgb(0 0 0 / 25%);
+}
+.activtitle
+{
+    padding-left: 15px;
+}
+.columns img:hover
+{
+    width: 110%;
+}
+.bigcardimg1
+{
+    height: 392px;
+}
+.bigcardimg2
+{
+    height: 392px;
+}
+.smallcardimg1
+{
+    height: 203px;
+}
+.smallcardimg2
+{
+    height: 100px;
+}
+.smallcardimg3
+{
+    height: 150px;
+}
+.smallcardimg4
+{
+    height: 150px;
+}
+/*----------------------------------------------FOOTER------------------------------------------*/
+footer
+{
+    width: 100%;
+    margin: 40px 0 0 0;
+    background-color: #F2F2F2;
+}
+footer h2
+{
+    font-size: 16px;
+    font-weight: 710;
+}
+footer ul
+{
+    list-style: none;
+}
+footer li
+{
+    padding: 8px 0;
+}
+footer a:hover
+{
+    color: #0065FC;
+}
+.footerbox
+{
+    max-width: 1440px;
+    margin: auto;
+    padding-left: 3%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    gap: 19%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*________________________________________________TABLET QUERY________________________________________________________*/
+@media screen and (min-width: 769px) and (max-width: 991px)
+{
+    .container
+    {
+        width: 100%;
+    }
+    /*--------------------------------------------SEARCHTOOL TABLET---------------------------------------------------*/
+    #mag
+    {
+        display: none;
+    }
+    /*--------------------------------------------MIDDLE SECTION TABLET-----------------------------------------------*/
+    #midsec
+    {
+        margin: 0;
+        margin-top: 30px;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    #midsec h2
+    {
+        font-size: 30px;
+    }
+    #midsec h3
+    {
+        font-size: 25px;
+    }
+    #midsec p
+    {
+        font-size: 20px;
+    }
+    .fa-star
+    {
+        font-size: 20px;
+        margin: 0;
+    }
+    /*-------------------------------------------LES PLUS POPULAIRES TABLET-------------------------------------------*/
+    #populaires
+    {
+        border-radius: 0;
+        width: 100%;
+    }
+    .cardpop a
+    {
+        height: 250px;
+    }
+    .imgpop
+    {
+        height: inherit;
+        width: 250px;
+    }
+    .imgpop img
+    {
+        width: inherit;
+    }
+    .fa-chart-line
+    {
+        font-size: 30px;
+    }
+    /*------------------------------------------HEBERGEMENTS MARSEILLE TABLET----------------------------------------*/
+    #hebmar
+    {
+        background-color: white;
+        border-radius: 0;
+        width: 100%;
+    }
+    #articleheb
+    {
+        flex-direction: column;
+    }
+    .cardheb
+    {
+        width: 100%;
+    }
+
+    .cardheb img
+    {
+        height: 250px;
+    }
+    /*--------------------------------------------ACTIVITES TABLET-------------------------------------------------*/
+    .bottomsec
+    {
+        margin: 0;
+        padding: 0 30px;
+    }
+    .bottomsec h2
+    {
+        font-size: 30px;
+    }
+    .bottomsec h3
+    {
+        font-size: 25px;
+    }
+    .activ
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .columns
+    {
+        width: 100%;
+    }
+    .column2
+    {
+        gap: 20px;
+    }
+    .activ img
+    {
+        height: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*_____________________________________________MOBILE QUERY________________________________________________________*/
+@media screen  and (max-width: 768px)
+{
+    .container
+    {
+        width: 100%;
+    }
+    /*-----------------------------------------HEADER MOBILE-------------------------------------------------------*/
+    header
+    {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    header img
+    {
+        margin-left: 19%;
+    }
+    nav
+    {
+        width: 100%;
+    }
+    nav li
+    {
+        width: 50%;
+        padding-bottom: 15px;
+        border-bottom: 2px solid rgb(228, 228, 228);
+    }
+    nav li a
+    {
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+    nav li:hover
+    {
+        border-bottom: 2px solid #0065FC;
+    }
+    nav li a:hover
+    {
+        border-top: none;
+    }
+    /*------------------------------------------SEARCHTOOL MOBILE---------------------------------------------------*/
+    #searchtool
+    {
+        margin: 0;
+        padding-left: 20px;
+    }
+    #searchtool h1
+    {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    #button
+    {
+        display: none;
+    }
+    #mag
+    {
+    display: inline-block;
+    position: absolute;
+    left: 270px;
+    height: 45px;
+    width: 45px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    }
+    /*------------------------------------------------MIDDLE SECTION MOBILE-----------------------------------------*/
+    #midsec
+    {
+        margin: 0;
+        margin-top: 30px;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    /*------------------------------------------------LES PLUS POPULAIRES MOBILE------------------------------------*/
+    #populaires
+    {
+        border-radius: 0;
+        width: 100%;
+    }
+    /*------------------------------------------------HEBERGEMENTS MARSEILLE MOBILE---------------------------------*/
+    #hebmar
+    {
+        background-color: white;
+        border-radius: 0;
+        width: 100%;
+    }
+    #articleheb
+    {
+        flex-direction: column;
+    }
+    .cardheb
+    {
+        width: 100%;
+    }
+    /*-------------------------------------------------ACTIVITES MOBILE---------------------------------------------*/
+    .bottomsec
+    {
+        margin: 0;
+        padding: 0 30px;
+    }
+    .activ
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .columns
+    {
+        width: 100%;
+    }
+    .column2
+    {
+        gap: 20px;
+    }
+    .activ img
+    {
+        height: 100px;
+    }
+    /*--------------------------------------------------FOOTER MOBILE-----------------------------------------------*/
+    .footerbox
+    {
+        padding-left: 14%;
+        flex-direction: column;
+    }
+}
